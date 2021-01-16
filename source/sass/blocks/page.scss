@@ -1,0 +1,28 @@
+.page {
+  margin: 0;
+  padding: 0;
+}
+
+.page__body {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 185px;
+}
+
+.page__main {
+  margin-top: -98px;
+}
+
+.page__footer {
+  margin-top: 130px;
+}
+
+.page__overlay::after {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}

@@ -1,12 +1,134 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Подбор авто в лизинг</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <!-- Pixel Glass -->
+<style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* Mobile layout by default */
+    background-image: url( "img/320.png" );
+  }
+  /* Tablet */
+  @media ( min-width: 760px ) {
+    HTML {
+      /* Tablet layout */
+      background-image: url( "img/760.png" );
+    }
+  }
+  /* Desktop */
+  @media ( min-width: 1200px ) {
+    HTML {
+      /* Desktop layout */
+      background-image: url( "img/design/index-auth.png" );
+    }
+  }
+</style>
+<link href="pixel-glass/styles.css" rel="stylesheet">
+<script src="pixel-glass/script.js"></script>
+<!-- // Pixel Glass -->
 </head>
-<body>
-
+<body class="page__body">
+  <header class="page__header header">
+    <div class="header__wrapper wrapper">
+      <a class="header__logo logo" href="/">
+        <svg class="logo__image" width="147" height="32">
+          <use xlink:href="img/sprite.svg#logo" role="img"></use>
+        </svg>
+      </a>
+      <nav class="header__nav nav">
+        <ul class="nav__menu menu">
+          <li class="menu__item">
+            <a class="menu__link" href="">Клиентам</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--icon" id="login" href="login.html">
+              <svg class="menu__icon" width="24" height="24">
+                <use xlink:href="img/sprite.svg#login_icon" role="img"></use>
+              </svg>
+              Войти
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="page__main main">
+    <section class="main__promo promo">
+      <div class="promo__wrapper wrapper">
+        <h1 class="promo__heading heading">Подбор авто в лизинг по выгодной цене</h1>
+        <p class="promo__text">IT платформа по быстрому поиску автомобиля от официальных дилеров РФ</p>
+        <a class="promo__button button button--registration" href="">Регистрация</a>
+      </div>
+    </section>
+    <section class="main__features features">
+      <div class="features__wrapper wrapper">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <p class="features__heading heading">Меньше условий – больше возможностей</p>
+        <ul class="features__list feature-list">
+          <li class="feature-list__item">
+            <div class="feature-list__info">
+              <span class="feature-list__title">Экономия времени</span>
+              <p class="feature-list__text">Дополнительный канал потенциальных клиентов, готовых приобрести автомобиль, без затрат на рекламу и маркетинг.</p>
+            </div>
+            <img class="feature-list__image" src="img/Time.png" width="193" height="193" alt="">
+          </li>
+          <li class="feature-list__item">
+            <div class="feature-list__info">
+              <span class="feature-list__title">Никаких задержек</span>
+              <p class="feature-list__text feature-list__text--speed">Вы получаете запросы сразу же после отправки клиентом.</p>
+            </div>
+            <img class="feature-list__image" src="img/Speed.png" width="193" height="193" alt="">
+          </li>
+          <li class="feature-list__item">
+            <div class="feature-list__info">
+              <span class="feature-list__title">Максимальная информативность</span>
+              <p class="feature-list__text feature-list__text--info">В каждой заявке указан регион поиска, марка и модель авто, а так же  индивидуальные запросы клиента.</p>
+            </div>
+            <img class="feature-list__image" src="img/Information.png" width="193" height="193" alt="">
+          </li>
+          <li class="feature-list__item">
+            <div class="feature-list__info">
+              <span class="feature-list__title">Удобство общения</span>
+              <p class="feature-list__text feature-list__text--chat">Для каждого запроса у вас открыт чат
+                с клиентом с возможностью отправки документов.</p>
+            </div>
+            <img class="feature-list__image" src="img/Chat.png" width="193" height="193" alt="">
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer footer">
+    <div class="wrapper footer__wrapper">
+      <section class="footer_registration registration">
+        <h2 class="visually-hidden">Регистрация</h2>
+        <p class="registration__heading heading">Регистрируйся и получай актуальные запросы на автомобили от заинтерисованных клиентов</p>
+        <a class="registration__button button button--registration button--registration-footer" href="">Регистрация</a>
+      </section>
+    </div>
+  </footer>
+  <section class="modal visually-hidden">
+    <div class="modal__wrapper">
+      <h3 class="modal__heading heading">Авторизация</h3>
+      <form class="modal__form form" action="">
+        <label class="form__label" for="email">E-mail</label>
+        <input class="form__input" type="email" name="email" id="email" placeholder="Введите email">
+        <label class="form__label" for="password">Пароль</label>
+        <input class="form__input"   type="password" name="password" id="password" placeholder="Введите пароль">
+        <button class="form__button button button--modal" type="submit">Войти</button>
+      </form>
+    </div>
+    <button class="modal__button button button--close" id="close">
+      <svg class="modal__icon" width="14" height="14">
+        <use xlink:href="img/sprite.svg#close_icon"></use>
+      </svg>
+    </button>
+  </section>
+  <script src="js/app.min.js"></script>
 </body>
 </html>

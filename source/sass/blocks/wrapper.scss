@@ -1,0 +1,9 @@
+.wrapper {
+  margin: 0 auto;
+
+  @media (min-width: $desktop) {
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

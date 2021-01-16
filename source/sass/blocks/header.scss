@@ -1,0 +1,20 @@
+.header {
+  @media (min-width: $desktop) {
+    padding-top: 33px;
+    padding-bottom: 29px;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin-left: 4px;
+}
+
+.header__nav {
+  margin-top: 4px;
+  margin-right: 13px;
+}

@@ -1,0 +1,28 @@
+.registration {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-left: 70px;
+
+  background-image: url("../img/Group55.png"), $background-gradient;
+  background-repeat: no-repeat, repeat;
+  background-position: right bottom 12px;
+
+  border-radius: 10px;
+}
+
+.registration__heading {
+  max-width: 558px;
+
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 45px;
+
+  color: $basic-white;
+}
+
+.registration__button {
+  margin-top: 46px;
+}

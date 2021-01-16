@@ -1,0 +1,27 @@
+.menu {
+  @include list-style;
+  display: flex;
+}
+
+.menu__item:not(:last-child) {
+  margin-right: 99px;
+}
+
+.menu__link {
+  font-family: $special-font-family;
+  font-size: 18px;
+  line-height: 23px;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  color: $basic-white;
+}
+
+.menu__link--icon {
+  display: flex;
+}
+
+.menu__icon {
+  margin-right: 12px;
+}
