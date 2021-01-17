@@ -4,13 +4,22 @@
 
   padding-top: 70px;
   padding-bottom: 70px;
-  padding-left: 70px;
+  padding-left: 20px;
 
-  background-image: url("../img/Group55.png"), $background-gradient;
-  background-repeat: no-repeat, repeat;
+  background-image: url("../img/Group55.webp"), url("../img/Group55.png"), $background-gradient;
+  background-repeat: no-repeat, no-repeat, repeat;
   background-position: right bottom 12px;
 
   border-radius: 10px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/Group55@2x.webp"), url("../img/Group55@2x.png"), $background-gradient;
+  }
+
+  @media (min-width: $tablet) {
+    padding-left: 70px;
+    background-size: 732px auto, 732px auto, contain;
+  }
 }
 
 .registration__heading {
@@ -24,5 +33,12 @@
 }
 
 .registration__button {
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 46px;
+
+  @media (min-width: $tablet) {
+    margin-right: initial;
+    margin-left: initial;
+  }
 }

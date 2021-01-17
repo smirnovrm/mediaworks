@@ -10,11 +10,15 @@
 }
 
 .page__main {
-  margin-top: -98px;
+  margin-top: -127px;
+
+  @media (min-width: $tablet) {
+    margin-top: -98px;
+  }
 }
 
 .page__footer {
-  margin-top: 130px;
+  margin-top: 126px;
 }
 
 .page__overlay::after {
@@ -24,5 +28,6 @@
   right: 0;
   top: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #1c182f;
+  opacity: 0.3;
 }

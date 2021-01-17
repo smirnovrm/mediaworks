@@ -1,10 +1,22 @@
 .menu {
   @include list-style;
   display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+}
+
+.menu__item {
+  // margin-bottom: 10px;
+  text-align: center;
 }
 
 .menu__item:not(:last-child) {
-  margin-right: 99px;
+  @media (min-width: $tablet) {
+    margin-right: 99px;
+  }
 }
 
 .menu__link {
@@ -16,10 +28,17 @@
   text-decoration: none;
 
   color: $basic-white;
+
+  transition: color 0.5s ease-in;
+
+  &:hover {
+    color: $accent-orange-hover;
+  }
 }
 
 .menu__link--icon {
   display: flex;
+  justify-content: center;
 }
 
 .menu__icon {

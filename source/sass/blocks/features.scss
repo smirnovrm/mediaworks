@@ -3,6 +3,12 @@
   line-height: 52px;
 
   color: $basic-dark;
+
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    text-align: initial;
+  }
 }
 
 .features__list {

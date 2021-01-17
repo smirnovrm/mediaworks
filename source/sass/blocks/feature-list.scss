@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  row-gap: 30px;
+  row-gap: 26px;
 
   font-family: $basic-font-family;
   font-style: normal;
@@ -12,17 +12,41 @@
 
 .feature-list__item {
   display: flex;
-  justify-content: space-between;
-  width: 570px;
+  flex-direction: column;
+  align-items: center;
 
-  padding: 21px 10px 21px 40px;
+  width: 95%;
+  min-width: 280px;
+
+  margin: auto;
+  padding: 10px;
+
 
   background-color: $background-color;
   border-radius: 6px;
+
+  @media (min-width: $tablet) {
+    width: 570px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+
+    padding: 21px 10px 21px 40px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: initial;
+    // width: 570px;
+
+  }
 }
 
 .feature-list__info {
   padding-top: 22px;
+
+  @media (min-width: $tablet) {
+    // padding-top: initial;
+  }
 }
 
 .feature-list__title {
@@ -50,6 +74,8 @@
 
 .feature-list__text--info {
   max-width: 292px;
+  @media (min-width: $desktop) {
+  }
 }
 
 .feature-list__text--chat {

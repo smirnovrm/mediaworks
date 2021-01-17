@@ -3,5 +3,7 @@
 }
 
 .footer_registration {
-  margin-left: 15px;
+  @media (min-width: $desktop) {
+    margin-left: 15px;
+  }
 }
