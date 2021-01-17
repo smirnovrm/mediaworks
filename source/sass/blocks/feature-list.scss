@@ -36,17 +36,11 @@
 
   @media (min-width: $desktop) {
     margin: initial;
-    // width: 570px;
-
   }
 }
 
 .feature-list__info {
   padding-top: 22px;
-
-  @media (min-width: $tablet) {
-    // padding-top: initial;
-  }
 }
 
 .feature-list__title {
@@ -74,8 +68,6 @@
 
 .feature-list__text--info {
   max-width: 292px;
-  @media (min-width: $desktop) {
-  }
 }
 
 .feature-list__text--chat {
