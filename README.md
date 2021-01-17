@@ -1,5 +1,5 @@
 # mediaworks
-git clone git@github.com:smirnovrm/mediaworks.git
-cd mediaworks
-npm i
+git clone git@github.com:smirnovrm/mediaworks.git<br>
+cd mediaworks<br>
+npm i<br>
 npm start
